@@ -1,17 +1,11 @@
-# -*- coding: utf-8 -*-
-
-"""Console script for eldoled."""
-
-import click
+from __future__ import print_function
 
 
-@click.command()
-def main(args=None):
-    """Console script for eldoled."""
-    click.echo("Replace this message by putting your code into "
-               "eldoled.cli.main")
-    click.echo("See click documentation at http://click.pocoo.org/")
+def hello():
+    """Return hello world."""
+    return("Hello world!")
 
 
-if __name__ == "__main__":
-    main()
+def say_hello():
+    """Print hello world."""
+    print(hello())
